@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0B3D2E" />
+  <title>AGEx Smart Money Hub — Steward Lodge Entry</title>
+  <meta
+    name="description"
+    content="AGEx Smart Money Hub is a proof-based financial discipline academy. Verify once, enter the Steward Lodge, begin Day 1 immediately, and progress through structure."
+  />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AGEx Smart Money Hub — Steward Lodge Entry" />
+  <meta
+    property="og:description"
+    content="A proof-based financial discipline academy. $10 verification unlocks entry into the Steward Lodge and immediate access to Day 1."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/agex-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      --bg:#07140F;
+      --surface:#0D1E17;
+      --surface-2:#11261E;
+      --card:#132A21;
+      --line:rgba(255,255,255,.09);
+      --line-strong:rgba(255,255,255,.16);
+      --text:#F5F3EC;
+      --muted:#C8C3B5;
+      --soft:#9E9A90;
+      --gold:#C8A96B;
+      --gold-2:#E4C88E;
+      --accent:#0B3D2E;
+      --danger:#9F3E34;
+      --shadow:0 20px 60px rgba(0,0,0,.28);
+      --radius:20px;
+      --radius-sm:14px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(200,169,107,.08), transparent 32%),
+        linear-gradient(180deg, #081611 0%, #07140F 100%);
+      color:var(--text);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max), calc(100% - 32px)); margin:0 auto}
+    .section{padding:84px 0}
+    .section-tight{padding:64px 0}
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 14px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.02);
+      color:var(--gold-2);
+      font-size:.8rem;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .eyebrow::before{
+      content:"";
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--gold);
+      box-shadow:0 0 0 6px rgba(200,169,107,.10);
+    }
+
+    h1,h2,h3{
+      margin:0 0 14px;
+      line-height:1.1;
+      letter-spacing:-0.03em;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight:700;
+    }
+
+    h1{font-size:clamp(2.4rem, 6vw, 4.8rem)}
+    h2{font-size:clamp(1.7rem, 3.5vw, 3rem)}
+    h3{font-size:clamp(1.15rem, 2vw, 1.5rem)}
+    p{margin:0 0 14px; color:var(--muted)}
+    .lead{
+      font-size:clamp(1.05rem, 1.8vw, 1.22rem);
+      color:#DDD6C8;
+      max-width:760px;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter:blur(12px);
+      background:rgba(7,20,15,.72);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      border:1px solid rgba(200,169,107,.30);
+      background:
+        radial-gradient(circle at 30% 30%, rgba(228,200,142,.18), transparent 45%),
+        linear-gradient(180deg, #153127, #0F221B);
+      display:grid;
+      place-items:center;
+      color:var(--gold-2);
+      font-family:Georgia, serif;
+      font-weight:700;
+      box-shadow:var(--shadow);
+    }
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      line-height:1.05;
+    }
+    .brand-text strong{
+      font-size:.98rem;
+      letter-spacing:.04em;
+    }
+    .brand-text span{
+      font-size:.74rem;
+      color:var(--soft);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+    .nav-links a{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .nav-links a:hover{color:var(--text)}
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:52px;
+      padding:0 22px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-weight:700;
+      transition:.22s ease;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .btn-primary{
+      color:#08110D;
+      background:linear-gradient(180deg, var(--gold-2), var(--gold));
+      box-shadow:0 12px 28px rgba(200,169,107,.22);
+    }
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-secondary{
+      border-color:var(--line-strong);
+      color:var(--text);
+      background:rgba(255,255,255,.03);
+    }
+    .btn-secondary:hover{
+      border-color:rgba(255,255,255,.24);
+      background:rgba(255,255,255,.05);
+    }
+    .btn-ghost{
+      color:var(--gold-2);
+      background:transparent;
+      padding:0;
+      min-height:auto;
+      border-radius:0;
+      font-weight:600;
+    }
+
+    .hero{
+      padding:84px 0 72px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:stretch;
+    }
+    .hero-card, .panel, .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-card{
+      padding:34px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card::after{
+      content:"";
+      position:absolute;
+      inset:auto -80px -80px auto;
+      width:240px;
+      height:240px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(200,169,107,.10), transparent 60%);
+      pointer-events:none;
+    }
+    .hero-copy h1{
+      max-width:880px;
+      margin-top:18px;
+    }
+    .hero-copy p{
+      max-width:760px;
+      margin-bottom:22px;
+    }
+
+    .micro{
+      color:#E6DDCC;
+      font-size:.95rem;
+      margin-top:12px;
+    }
+
+    .cta-row{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin:26px 0 12px;
+    }
+
+    .trust-strip{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:12px;
+      margin-top:26px;
+    }
+    .trust-item{
+      padding:14px 16px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(255,255,255,.02);
+      font-size:.92rem;
+      color:#E7E0D1;
+      text-align:center;
+    }
+
+    .hero-side{
+      padding:22px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .side-block{
+      padding:20px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,255,255,.02);
+    }
+    .side-block small{
+      display:block;
+      color:var(--gold-2);
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:.73rem;
+      margin-bottom:10px;
+    }
+    .side-block strong{
+      display:block;
+      font-size:1rem;
+      color:var(--text);
+      margin-bottom:8px;
+    }
+    .rule-list{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+
+    .center-head{
+      max-width:760px;
+      margin:0 auto 24px;
+      text-align:center;
+    }
+
+    .note-block{
+      max-width:900px;
+      margin:0 auto;
+      padding:30px;
+    }
+    .note-block p{
+      font-size:1.05rem;
+      color:#DDD6C8;
+      margin-bottom:18px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+    }
+
+    .card{
+      padding:26px;
+    }
+    .card ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    .card li{margin:10px 0}
+    .card strong{
+      color:var(--text);
+    }
+
+    .diag-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+    }
+
+    .label{
+      display:inline-block;
+      margin-bottom:14px;
+      padding:6px 12px;
+      border-radius:999px;
+      font-size:.78rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      border:1px solid var(--line);
+    }
+    .label-bad{
+      color:#E7B6AF;
+      background:rgba(159,62,52,.10);
+      border-color:rgba(159,62,52,.24);
+    }
+    .label-good{
+      color:#DCC89E;
+      background:rgba(200,169,107,.08);
+      border-color:rgba(200,169,107,.24);
+    }
+
+    .unlock-list{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:22px;
+    }
+    .unlock-item{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(255,255,255,.02);
+    }
+
+    .important-line{
+      margin-top:18px;
+      padding:16px 18px;
+      border-left:3px solid var(--gold);
+      background:rgba(200,169,107,.06);
+      color:#E6DDCC;
+      border-radius:0 14px 14px 0;
+    }
+
+    .day-preview{
+      display:grid;
+      grid-template-columns:1fr .95fr;
+      gap:24px;
+      align-items:stretch;
+    }
+    .preview-main, .preview-rule{
+      padding:28px;
+    }
+
+    .doctrine{
+      font-size:1.05rem;
+      color:#E7E0D1;
+      margin-bottom:16px;
+    }
+    .preview-steps{
+      display:grid;
+      gap:14px;
+      margin-top:16px;
+    }
+    .step-row{
+      padding:16px 18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(255,255,255,.02);
+    }
+    .step-row span{
+      display:block;
+      color:var(--gold-2);
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      margin-bottom:6px;
+    }
+
+    .phase-grid, .steps-grid, .ladder-grid, .fit-grid{
+      display:grid;
+      gap:18px;
+    }
+    .phase-grid{grid-template-columns:repeat(3,1fr)}
+    .steps-grid{grid-template-columns:repeat(4,1fr)}
+    .ladder-grid{grid-template-columns:repeat(5,1fr)}
+    .fit-grid{grid-template-columns:1fr 1fr}
+
+    .phase, .step, .ladder, .fit{
+      padding:22px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,255,255,.02);
+    }
+    .phase-number, .step-number{
+      display:inline-grid;
+      place-items:center;
+      width:34px;
+      height:34px;
+      border-radius:50%;
+      background:rgba(200,169,107,.12);
+      color:var(--gold-2);
+      font-weight:700;
+      margin-bottom:12px;
+    }
+
+    .rule-box{
+      margin-top:22px;
+      padding:20px;
+      border:1px solid rgba(200,169,107,.24);
+      background:rgba(200,169,107,.07);
+      border-radius:18px;
+    }
+    .rule-box ul{
+      margin:0;
+      padding-left:18px;
+      color:#E6DDCC;
+    }
+
+    .ladder small{
+      display:block;
+      color:var(--gold-2);
+      font-size:.76rem;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+
+    .note-inline{
+      margin-top:18px;
+      color:#E7E0D1;
+      font-weight:600;
+    }
+
+    .conversion{
+      text-align:center;
+      padding:34px;
+    }
+    .conversion p{
+      max-width:700px;
+      margin:0 auto 20px;
+    }
+
+    .small-links{
+      display:flex;
+      gap:18px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .small-links a{
+      color:var(--gold-2);
+      font-size:.95rem;
+    }
+
+    footer{
+      padding:28px 0 48px;
+      border-top:1px solid var(--line);
+      color:var(--soft);
+      font-size:.92rem;
+    }
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width: 1080px){
+      .hero-grid,
+      .day-preview,
+      .two-col,
+      .diag-grid,
+      .fit-grid{
+        grid-template-columns:1fr;
+      }
+      .phase-grid{grid-template-columns:1fr}
+      .steps-grid{grid-template-columns:repeat(2,1fr)}
+      .ladder-grid{grid-template-columns:repeat(2,1fr)}
+      .trust-strip{grid-template-columns:repeat(2,1fr)}
+      .unlock-list{grid-template-columns:1fr}
+    }
+
+    @media (max-width: 720px){
+      .section{padding:70px 0}
+      .hero{padding:62px 0 54px}
+      .hero-card, .card, .panel, .note-block, .preview-main, .preview-rule, .conversion{
+        padding:22px;
+      }
+      .nav{
+        min-height:72px;
+      }
+      .nav-links{
+        display:none;
+      }
+      .steps-grid,
+      .ladder-grid,
+      .trust-strip{
+        grid-template-columns:1fr;
+      }
+      .cta-row{
+        flex-direction:column;
+        align-items:stretch;
+      }
+      .btn{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="AGEx Smart Money Hub Home">
+        <div class="brand-mark">A</div>
+        <div class="brand-text">
+          <strong>AGEx Smart Money Hub</strong>
+          <span>Steward Lodge Entry</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#problem">The Problem</a>
+        <a href="#what-this-is">What This Is</a>
+        <a href="#foundation">21-Day Foundation</a>
+        <a href="founder.html">Founder’s Note</a>
+        <a class="btn btn-primary" href="https://paystack.shop/pay/cap90">Verify and Enter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card hero-copy">
+          <span class="eyebrow">Proof-Based Financial Formation</span>
+          <h1>Most people don’t have a money problem. They have a discipline problem.</h1>
+          <p class="lead">
+            AGEx Smart Money Hub is a financial discipline academy where verified members enter the Steward Lodge, begin proof-based training, and learn to control money behavior before pursuing growth.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://paystack.shop/pay/cap90">Verify and Enter the Steward Lodge</a>
+            <a class="btn btn-secondary" href="founder.html">Read Founder’s Note</a>
+          </div>
+
+          <p class="micro">$10 verification • Day 1 begins immediately • Progress requires proof</p>
+
+          <div class="trust-strip" aria-label="Trust signals">
+            <div class="trust-item">21-Day Foundation</div>
+            <div class="trust-item">Proof-Based Progression</div>
+            <div class="trust-item">Structured Financial Training</div>
+            <div class="trust-item">Verified Entry</div>
+          </div>
+        </div>
+
+        <aside class="hero-card hero-side" aria-label="Entry summary">
+          <div class="side-block">
+            <small>What entry unlocks</small>
+            <strong>Immediate access to Foundation Day 1</strong>
+            <p>You do not enter to browse. You enter to begin.</p>
+          </div>
+
+          <div class="side-block">
+            <small>Progress standard</small>
+            <strong>No proof, no progression</strong>
+            <p>Movement inside the Lodge is earned by daily submission, not passive consumption.</p>
+          </div>
+
+          <div class="side-block">
+            <small>Entry rule</small>
+            <strong>Verification is a seriousness gate</strong>
+            <ul class="rule-list">
+              <li>One-time $10 verification</li>
+              <li>Start immediately after entry</li>
+              <li>No skipping ahead</li>
+              <li>Higher levels require qualification</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOUNDER NOTE -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="note-block panel">
+          <div class="center-head" style="margin-bottom:0;text-align:left;max-width:none">
+            <span class="eyebrow">Founder’s Note</span>
+          </div>
+          <p>
+            Smart Money Hub was not built for spectators. It was built for people willing to submit to structure, prove consistency, and grow through disciplined action.
+          </p>
+          <a class="btn btn-ghost" href="founder.html">Read Founder’s Note →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem" class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">The Core Problem</span>
+          <h2>The problem is rarely income first. It is disorder first.</h2>
+          <p>
+            Many people do not fail because money never entered their hands. They fail because money entered without government.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>What disorder looks like</h3>
+            <ul>
+              <li>People spend without awareness.</li>
+              <li>They react instead of govern.</li>
+              <li>They want growth without control.</li>
+              <li>They consume information without building habits.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Why correction matters</h3>
+            <p>
+              When disorder remains unchallenged, more income simply increases the size of the problem. Smart Money Hub exists to correct that pattern.
+            </p>
+            <div class="important-line">
+              Financial clarity begins when behavior becomes visible, measurable, and governed.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT THIS IS -->
+    <section id="what-this-is" class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">What This Is</span>
+          <h2>A financial discipline academy, not a hype platform.</h2>
+          <p>
+            This page is not offering noise, shortcuts, or casual inspiration. It is offering a governed path into economic readiness.
+          </p>
+        </div>
+
+        <div class="diag-grid">
+          <div class="card">
+            <span class="label label-bad">This is not</span>
+            <ul>
+              <li>A motivation group</li>
+              <li>A trading group</li>
+              <li>A shortcut-to-money platform</li>
+              <li>A casual finance community</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="label label-good">This is</span>
+            <ul>
+              <li>A proof-based discipline system</li>
+              <li>A structured 21-day foundation</li>
+              <li>A locked progression path</li>
+              <li>A serious gateway into economic readiness</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT $10 UNLOCKS -->
+    <section class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">$10 Verification</span>
+          <h2>What your $10 verification unlocks</h2>
+          <p>
+            You are not paying for scattered information. You are verifying entry into a system built on structure, proof, and progression.
+          </p>
+        </div>
+
+        <div class="panel card">
+          <div class="unlock-list">
+            <div class="unlock-item"><strong>Entry into the Steward Lodge</strong><br>Access begins at the gate of verification.</div>
+            <div class="unlock-item"><strong>Immediate access to Foundation Day 1</strong><br>Your first assignment begins immediately after entry.</div>
+            <div class="unlock-item"><strong>Your personal discipline dashboard</strong><br>A defined place for tracking daily proof and progression.</div>
+            <div class="unlock-item"><strong>Proof-based progression tracking</strong><br>Movement is recorded through compliance, not browsing.</div>
+            <div class="unlock-item"><strong>Visible access to the full ladder</strong><br>You can see the path ahead, but only Foundation is unlocked at entry.</div>
+          </div>
+
+          <div class="important-line">
+            You are not paying for information. You are verifying entry into a discipline system.
+          </div>
+
+          <div class="cta-row" style="margin-top:24px">
+            <a class="btn btn-primary" href="https://paystack.shop/pay/cap90">Verify for $10</a>
+            <a class="btn btn-secondary" href="apply.html">Read Entry / Apply Flow</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST DAY INSIDE -->
+    <section class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">Your First Day Inside</span>
+          <h2>What happens right after payment?</h2>
+          <p>
+            Entry is immediate. So is responsibility.
+          </p>
+        </div>
+
+        <div class="day-preview">
+          <div class="panel preview-main">
+            <p class="doctrine"><strong>Day 1 theme:</strong> Awareness comes before control.</p>
+
+            <div class="preview-steps">
+              <div class="step-row">
+                <span>Your action</span>
+                List every expense you made in the last 24 hours.
+              </div>
+
+              <div class="step-row">
+                <span>Your proof</span>
+                Submit your expense list and total amount spent.
+              </div>
+
+              <div class="step-row">
+                <span>Your rule</span>
+                No proof, no progression.
+              </div>
+            </div>
+          </div>
+
+          <div class="panel preview-rule">
+            <h3>Why this matters</h3>
+            <p>
+              Most people try to improve money before they can even see it clearly. Day 1 corrects that. It trains observation before ambition.
+            </p>
+            <div class="important-line">
+              The Lodge does not begin with theory alone. It begins with visible behavior.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21 DAY FOUNDATION -->
+    <section id="foundation" class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">21-Day Foundation</span>
+          <h2>The first layer of the Lodge</h2>
+          <p>
+            In 21 days, you begin developing the ability to observe, record, and control your money behavior.
+          </p>
+        </div>
+
+        <div class="phase-grid">
+          <div class="phase">
+            <div class="phase-number">1</div>
+            <h3>Awareness</h3>
+            <p>You learn to see where your money goes.</p>
+          </div>
+
+          <div class="phase">
+            <div class="phase-number">2</div>
+            <h3>Control</h3>
+            <p>You begin governing spending behavior instead of reacting to it.</p>
+          </div>
+
+          <div class="phase">
+            <div class="phase-number">3</div>
+            <h3>Alignment</h3>
+            <p>You direct money toward purpose and disciplined growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW PROGRESSION WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">How Progress Works</span>
+          <h2>Movement inside the Lodge is governed.</h2>
+          <p>
+            The system is designed to remove ambiguity. You do not advance by curiosity. You advance by proof.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Verify once</h3>
+            <p>Pass through the seriousness gate.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Start Day 1 immediately</h3>
+            <p>Your first discipline assignment begins at entry.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Submit proof daily</h3>
+            <p>Daily proof establishes compliance and momentum.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Unlock by structure</h3>
+            <p>Progression follows qualification, not open browsing.</p>
+          </div>
+        </div>
+
+        <div class="rule-box">
+          <ul>
+            <li>No proof, no progress.</li>
+            <li>No skipping ahead.</li>
+            <li>Higher levels require qualification.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE LADDER -->
+    <section class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">The Ladder</span>
+          <h2>The progression path inside the Lodge</h2>
+          <p>
+            Entry does not unlock everything. It reveals the structure and opens Foundation first.
+          </p>
+        </div>
+
+        <div class="ladder-grid">
+          <div class="ladder">
+            <small>Level 1</small>
+            <h3>Foundation</h3>
+            <p>Control money behavior.</p>
+          </div>
+
+          <div class="ladder">
+            <small>Level 2</small>
+            <h3>Apprentice</h3>
+            <p>Generate income intentionally.</p>
+          </div>
+
+          <div class="ladder">
+            <small>Level 3</small>
+            <h3>Builder</h3>
+            <p>Design repeatable value systems.</p>
+          </div>
+
+          <div class="ladder">
+            <small>Level 4</small>
+            <h3>Contributor</h3>
+            <p>Create opportunities for others.</p>
+          </div>
+
+          <div class="ladder">
+            <small>Level 5</small>
+            <h3>Income Stack Lab</h3>
+            <p>Enter the production layer.</p>
+          </div>
+        </div>
+
+        <p class="note-inline">Only Foundation is unlocked at entry. Everything else is earned.</p>
+      </div>
+    </section>
+
+    <!-- WHY VERIFICATION EXISTS -->
+    <section class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">Why Verification Exists</span>
+          <h2>Verification is not tuition. It is a seriousness gate.</h2>
+          <p>
+            It filters observers, protects the tone of the Lodge, creates commitment at the point of entry, and ensures members begin with intention.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>What verification does</h3>
+            <ul>
+              <li>Filters observers</li>
+              <li>Protects the seriousness of the Lodge</li>
+              <li>Creates commitment at entry</li>
+              <li>Ensures members start with intention</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>What verification is not</h3>
+            <p>
+              It is not payment for vague inspiration. It is not tuition for endless content. It is the act of crossing from interest into governed participation.
+            </p>
+            <div class="important-line">
+              Entry should cost enough to require intention, and remain simple enough for the serious person to begin.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO THIS IS FOR -->
+    <section class="section">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">Who Should Enter</span>
+          <h2>This Lodge is for the serious, not the curious alone.</h2>
+          <p>
+            It is designed for people willing to submit to a daily standard.
+          </p>
+        </div>
+
+        <div class="fit-grid">
+          <div class="fit card">
+            <span class="label label-good">For people who</span>
+            <ul>
+              <li>Are ready for structure</li>
+              <li>Can follow daily discipline</li>
+              <li>Want proof-based progress</li>
+              <li>Are willing to control money before chasing growth</li>
+            </ul>
+          </div>
+
+          <div class="fit card">
+            <span class="label label-bad">Not for people who want</span>
+            <ul>
+              <li>Quick money</li>
+              <li>Passive hype</li>
+              <li>Loose participation</li>
+              <li>Casual consumption</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CONVERSION -->
+    <section class="section">
+      <div class="container">
+        <div class="panel conversion">
+          <span class="eyebrow">Enter the Steward Lodge</span>
+          <h2>Verify once. Start Day 1 immediately.</h2>
+          <p>
+            Build financial discipline through proof, structure, and progression.
+          </p>
+
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn-primary" href="https://paystack.shop/pay/cap90">Verify and Enter the Steward Lodge</a>
+          </div>
+
+          <p class="micro">$10 verification • Day 1 starts immediately • Progress requires proof</p>
+
+          <div class="small-links">
+            <a href="founder.html">Read Founder’s Note</a>
+            <a href="apply.html">View Verification Policy</a>
+            <a href="lodge.html">Preview Lodge Access</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>AGEx Smart Money Hub</div>
+      <div>Stewardship-first. Proof-based. Governed progression.</div>
+    </div>
+  </footer>
+</body>
+</html>
